@@ -5,26 +5,40 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/fallgozxtest">
-    <img src="https://github-readme-stats.vercel.app/api?username=fallgozxtest&show_icons=true&theme=tokyonight&bg_color=0d1117&hide_border=true&title_color=79c0ff&icon_color=238636&text_color=c9d1d9" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/fallgozxtest">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=fallgozxtest&theme=tokyonight&background=0d1117&hide_border=true&ring=79c0ff&fire=238636&currStreakLabel=79c0ff&sideLabels=c9d1d9" alt="GitHub Streak" />
-  </a>
+  <img src="github-metrics.svg" alt="GitHub Metrics" width="100%">
 </p>
 
-<p align="center">
-  <img src="https://github-metrics-cyan.vercel.app/api/top-langs?username=fallgozxtest&show_icons=true&theme=tokyonight&bg_color=0d1117&hide_border=true&title_color=79c0ff&text_color=c9d1d9&langs_count=8&layout=compact" alt="Top Languages" />
-</p>
+---
+
+## 🚀 About Me
+
+- 🔭 I'm currently working on **AI and automation tools**
+- 🌱 I'm currently learning **machine learning and cloud infrastructure**
+- 👯 I'm looking to collaborate on **open-source projects**
+- 💬 Ask me about **Python, DevOps, and GitHub automation**
+- 📫 How to reach me: **[LinkedIn](https://linkedin.com/in/fallgozxtest)** | **[Twitter](https://twitter.com/fallgozxtest)**
+
+---
+
+## 🛠️ Tech Stack
 
 <p align="center">
-  <a href="https://github.com/fallgozxtest">
-    <img src="https://github-profile-trophy.vercel.app/?username=fallgozxtest&theme=dracula&no-frame=true&no-bg=true&column=7" alt="GitHub Trophies" />
-  </a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
 </p>
 
+---
+
+## 🏆 GitHub Trophies
+
 <p align="center">
-  <img src="https://github-metrics-cyan.vercel.app/api?username=fallgozxtest&type=svg&theme=tokyonight&bg_color=0d1117&hide_border=true&title_color=79c0ff&icon_color=238636&text_color=c9d1d9&include_all_commits=true&count_private=true&show_icons=true" alt="Metrics" />
+  <img src="https://github-profile-trophy.vercel.app/?username=fallgozxtest&theme=dracula&no-frame=true&no-bg=true&column=7" alt="GitHub Trophies" />
 </p>
 
 ---
@@ -40,6 +54,12 @@
 <p align="center">
   <a href="https://github.com/fallgozxtest">
     <img src="https://img.shields.io/badge/GitHub-fallgozxtest-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://linkedin.com/in/fallgozxtest">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://twitter.com/fallgozxtest">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
 </p>
 
