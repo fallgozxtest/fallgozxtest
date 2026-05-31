@@ -2,6 +2,8 @@ name: Metrics
 on:
   push:
     branches: [ main, master ]
+    paths-ignore:
+      - 'github-metrics.svg'
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
@@ -18,12 +20,7 @@ jobs:
         with:
           user: fallgozxtest
           template: classic
-          output: github-metrics.svg
-          filename: github-metrics.svg
+          output_action: commit
+          committer_branch: main
+          committer_message: 'chore: update metrics [Skip GitHub Action]'
           token: ${{ secrets.METRICS_TOKEN }}
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: gh-pages
-          build_dir: ./
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
