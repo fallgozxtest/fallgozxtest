@@ -1,8 +1,17 @@
+name: Metrics
+on:
+  push:
+    branches: [ main, master ]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   github-metrics:
-    permissions:
-      contents: write
-      issues: write
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
@@ -12,11 +21,9 @@ jobs:
           output: github-metrics.svg
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-name: Metrics
-on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: ./
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
