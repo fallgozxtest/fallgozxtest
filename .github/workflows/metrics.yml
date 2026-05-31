@@ -13,55 +13,79 @@ permissions:
   issues: write
 
 jobs:
-  metrics:
+  github-metrics:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
-        name: Languages metrics
+        name: Classic metrics
         with:
           user: fallgozxtest
-          template: terminal
+          template: classic
+          filename: metrics-classic.svg
+          output_action: commit
+          committer_branch: main
+          committer_message: 'chore: update classic metrics [Skip GitHub Action]'
+          token: ${{ secrets.METRICS_TOKEN }}
+      - uses: lowlighter/metrics@latest
+        name: Languages & habits
+        with:
+          user: fallgozxtest
+          template: classic
+          filename: metrics-languages.svg
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_habits: yes
           plugin_habits_charts: yes
           output_action: commit
-          committer_branch: metrics
-          committer_message: 'chore: update metrics [Skip GitHub Action]'
+          committer_branch: main
+          committer_message: 'chore: update languages metrics [Skip GitHub Action]'
           token: ${{ secrets.METRICS_TOKEN }}
       - uses: lowlighter/metrics@latest
         name: Isometric calendar
         with:
           user: fallgozxtest
           template: classic
+          filename: metrics-calendar.svg
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           output_action: commit
-          committer_branch: metrics
-          committer_message: 'chore: update isometric calendar [Skip GitHub Action]'
+          committer_branch: main
+          committer_message: 'chore: update calendar metrics [Skip GitHub Action]'
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-metrics-isocalendar.svg
       - uses: lowlighter/metrics@latest
         name: Stargazers
         with:
           user: fallgozxtest
           template: classic
+          filename: metrics-stargazers.svg
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
           output_action: commit
-          committer_branch: metrics
-          committer_message: 'chore: update stargazers [Skip GitHub Action]'
+          committer_branch: main
+          committer_message: 'chore: update stargazers metrics [Skip GitHub Action]'
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-metrics-stargazers.svg
       - uses: lowlighter/metrics@latest
         name: Lines of code
         with:
           user: fallgozxtest
           template: classic
+          filename: metrics-lines.svg
           plugin_lines: yes
           plugin_lines_sections: lines, commits, contributions
           output_action: commit
-          committer_branch: metrics
-          committer_message: 'chore: update lines of code [Skip GitHub Action]'
+          committer_branch: main
+          committer_message: 'chore: update lines metrics [Skip GitHub Action]'
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-metrics-lines.svg
+      - uses: lowlighter/metrics@latest
+        name: Trophies / achievements
+        with:
+          user: fallgozxtest
+          template: classic
+          filename: metrics-achievements.svg
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          output_action: commit
+          committer_branch: main
+          committer_message: 'chore: update achievements metrics [Skip GitHub Action]'
+          token: ${{ secrets.METRICS_TOKEN }}
